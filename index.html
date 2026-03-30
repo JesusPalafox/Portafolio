@@ -1,35 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 
 <head>
-  <link rel="stylesheet" href="css/styles.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mi portafolio</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
-
+  <!-- CSS -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
 
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
-  <script src="./js/modernizr-custom.js"></script>
-
 </head>
 
 <body>
 
+  <!-- HEADER -->
   <header>
     <div class="container">
 
-
       <nav class="menu">
-
-        <a href="#inicio">Inicio</a>
+        <a href="#">Inicio</a>
         <a href="#section-about">Acerca de</a>
         <a href="#section-jobs">Trabajos</a>
         <a href="#section-skills">Habilidades</a>
@@ -37,159 +34,112 @@
       </nav>
 
       <div class="container-text">
-
-<div class="text">
-    <h1>Jesús Samuel Palafox López</h1>
-    <h2>Estudiante de Ingeniería en Software</h2>
-    <a href="#">📄 Descargar CV</a>
-</div>
-</div>
+        <div class="text">
+          <h1>Jesús Samuel Palafox López</h1>
+          <h2>Estudiante de Ingeniería en Software</h2>
+          <a href="#">📄 Descargar CV</a>
+        </div>
       </div>
 
     </div>
   </header>
+
+  <!-- MAIN -->
   <main>
 
-    <section id="section-about">
-      <div class="container">
-        <div class="photo">
+    <!-- ABOUT -->
+    <section id="section-about" class="section-about">
+      <div class="container about-container">
 
-          <img src="./img/foto_perfil.jpg" width="200px" height="200px" alt="Foto de perfil">
-        </div>
-        <div class="text">
-          <h3 class="title">Acerca de</h3>
+        <img src="img/foto_perfil.jpg" alt="Foto de perfil">
 
+        <div class="about-text">
+          <h2>Acerca de mí</h2>
           <p>
-
-            Estudiante de <span class="bold"> ingenieria en software</span> de la Universidad Estatal de Sonora. <span class="bold"> Clase</span>,
-            Diseño Web.
+            Hola, soy estudiante de programación. Me gusta el desarrollo web,
+            aprender nuevas tecnologías y crear proyectos.
           </p>
         </div>
+
       </div>
     </section>
 
+    <!-- TRABAJOS -->
+    <section id="section-jobs" class="section-jobs">
 
-    <section id="section-jobs">
-      <div class="container">
-        <h3 class="titulo">Trabajos</h3>
-        <div class="container-jobs">
-
-          <!-- Trabajo 1 -->
-          <div class="job">
-            <div class="thumb">
-              <img src="img/jobs/1.jpg" width="250px" height="250px" alt="Desarrollador">
-            </div>
-            <div class="description">
-              <p class="name">OXXO</p>
-              <p class="category">HTML - CSS - PHP</p>
-            </div>
-          </div>
-
-          <!-- Trabajo 2 -->
-          <div class="job">
-            <div class="thumb">
-              <img src="img/jobs/2.jpg" width="250px" height="250px" alt="Desarrollador">
-            </div>
-            <div class="description">
-              <p class="name">Abarrey</p>
-              <p class="category">HTML - CSS - PHP</p>
-            </div>
-          </div>
-
-          <!-- Trabajo 3 -->
-          <div class="job">
-            <div class="thumb">
-              <img src="img/jobs/3.jpg" width="250px" height="250px" alt="Desarrollador">
-            </div>
-            <div class="description">
-              <p class="name">Steren</p>
-              <p class="category">HTML - CSS - PHP</p>
-            </div>
-          </div>
-
-    <section id="section-skills">
-      <div class="container">
-        <h3 class="title">Habilidades</h3>
-        <div class="container-skills">
-
-          <div class="skill">
-            <div class="icon-skill">
-              <i class="fa-brands fa-html5"></i>
-            </div>
-            <div class="description">
-              <p class="name">HTML</p>
-              <p class="category">Basico</p>
-            </div>
-          </div>
-
-          <div class="skill">
-            <div class="icon-skill">
-              <i class="fa-brands fa-css3-alt"></i>
-            </div>
-            <div class="description">
-              <p class="name">C#</p>
-              <p class="category">Basico</p>
-            </div>
-          </div>
-
-          <div class="skill">
-            <div class="icon-skill">
-              <i class="fa-brands fa-js"></i>
-            </div>
-            <div class="description">
-              <p class="name">JavaScript</p>
-              <p class="category">Intermedio</p>
-            </div>
-          </div>
-
-          <div class="skill">
-            <div class="icon-skill">
-              <i class="fa-brands fa-python"></i>
-            </div>
-            <div class="description">
-              <p class="name">Python</p>
-              <p class="category">basico</p>
-            </div>
-          </div>
-
-        </div>
+      <div class="card">
+        <img src="img/jobs/1.jpg" alt="">
+        <h3>OXXO</h3>
+        <p>HTML - CSS - PHP</p>
       </div>
+
+      <div class="card">
+        <img src="img/jobs/2.jpg" alt="">
+        <h3>Abarrey</h3>
+        <p>HTML - CSS - PHP</p>
+      </div>
+
+      <div class="card">
+        <img src="img/jobs/3.jpg" alt="">
+        <h3>Steren</h3>
+        <p>HTML - CSS - PHP</p>
+      </div>
+
+    </section>
+
+    <!-- HABILIDADES -->
+    <section id="section-skills" class="section-skills">
+      <h3 class="title">Habilidades</h3>
+
+      <div class="skill">
+        <i class="fa-brands fa-html5"></i>
+        <p>HTML - Básico</p>
+      </div>
+
+      <div class="skill">
+        <i class="fa-brands fa-css3-alt"></i>
+        <p>CSS - Básico</p>
+      </div>
+
+      <div class="skill">
+        <i class="fa-brands fa-js"></i>
+        <p>JavaScript - Intermedio</p>
+      </div>
+
+      <div class="skill">
+        <i class="fa-brands fa-python"></i>
+        <p>Python - Básico</p>
+      </div>
+
     </section>
 
   </main>
 
+  <!-- FOOTER -->
   <footer>
-    <div class="container">
 
-      <section id="section-contact">
-        <h3 class="title">Contacto</h3>
+    <!-- CONTACTO -->
+    <section id="section-contact" class="section-contact">
+      <h3 class="title">Contacto</h3>
 
+      <form>
+        <input type="text" placeholder="Nombre" required>
+        <input type="email" placeholder="Correo" required>
+        <textarea placeholder="Mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
 
-        <form class="form-menssage" action="">
-
-
-
-          <input type="text" name="nombre" placeholder="Nombre" required>
-          <input type="email" name="email" placeholder="Correo" required>
-
-          <textarea name="mensaje" placeholder="Mensaje" required></textarea>
-
-          <input class="btn-send-msg" type="submit" value="Enviar">
-        </form>
-      </section>
-
-    </div>
-
+    <!-- REDES -->
     <section id="section-social-media">
       <div class="container">
-        <a class="facebook" href="http://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
-        <a class="youtube" href="http://www.youtube.com/"><i class="fa-brands fa-square-youtube"></i></a>
-        <a class="github" href="https://github.com"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
       </div>
     </section>
 
   </footer>
 
 </body>
-
 </html>
